@@ -253,6 +253,7 @@ def check_Winner():
         win.blit(text, textRect)
         pygame.display.update()
         pygame.time.wait(1700)
+        reset_game()
 
 
 def show_winning_message(Winner):
