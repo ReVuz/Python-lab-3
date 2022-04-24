@@ -15,7 +15,7 @@ def PCA(A):
     P = proj.T.dot(Center.T)
     return P
 
-def main():
+def matrix():
     n, m = map(int, input("Enter the number of rows and column of matrix : ").split()) 
   #defining the matrix and taking input.
     print("Enter elements row by row : ")
@@ -29,4 +29,4 @@ def main():
         for j in i:
             print(round(j,2),end="\t")
         print("\n")
-main()
+matrix()
