@@ -18,12 +18,13 @@ def PCA(A):
 def main():
     n, m = map(int, input("Enter the number of rows and column of matrix : ").split()) 
   #defining the matrix and taking input.
-    A = np.array([input("Enter elements row by row : ").strip().split() for _ in range(n)], int)
+    print("Enter elements row by row : ")
+    A = np.array([input().strip().split() for _ in range(n)], int)
   
     P = PCA(A)
-    print("PCA of matrix : ")
+    print("\nPCA of matrix : ")
     print(P)
-    print("After rounding off : ")
+    print("\nAfter rounding off : ")
     for i in P :
         for j in i:
             print(round(j,2),end="\t")
